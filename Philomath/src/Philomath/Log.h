@@ -22,6 +22,7 @@ namespace Philomath {
 
 }
 
+
 // Core log macros
 #define PM_CORE_TRACE(...)			::Philomath::Log::GetCoreLogger()->trace(__VA_ARGS__)
 #define PM_CORE_INFO(...)			::Philomath::Log::GetCoreLogger()->info(__VA_ARGS__)
