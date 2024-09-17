@@ -1,0 +1,3 @@
+[submodule "Philomath/vendor/spdlog"]
+	path = Philomath/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
