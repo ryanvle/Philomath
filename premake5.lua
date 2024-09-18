@@ -26,5 +26,13 @@ project "Philomath"
 
 	}
 
+	include
+	{
+		"%{prj.name}/src/vendor/spdlog/include;"
+	}
+
+	filter "system:windows"
+		cppdialect "C++17"
+		staticruntime "On"
 
 	PM_PLATFORM_WINDOWS;PM_BUILD_DLL;_WINDLL;
