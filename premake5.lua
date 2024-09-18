@@ -34,5 +34,29 @@ project "Philomath"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
+		systemversion "latest"
 
-	PM_PLATFORM_WINDOWS;PM_BUILD_DLL;_WINDLL;
+		defines
+		{
+			"PM_PLATFORM_WINDOWS",
+			"PM_BUILD_DLL"
+		}
+
+		postbuildcommands
+		{
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+		}
+
+	filter "configurations:Debug"
+		defines "PM_DEBUG"
+		symbols "On"
+
+	filter "configurations:Release"
+		defines "PM_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "PM_DIST"
+		optimize "On"
+
+	
