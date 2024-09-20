@@ -19,14 +19,13 @@ project "Philomath"
 	targetdir ("bin/".. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/".. outputdir .. "/%{prj.name}")
 
-	files
+	files 
 	{
-		"%{prj.name}/src/**.h"
+		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
-
 	}
 
-	include
+	includedirs
 	{
 		"%{prj.name}/src/vendor/spdlog/include;"
 	}
@@ -59,4 +58,49 @@ project "Philomath"
 		defines "PM_DIST"
 		optimize "On"
 
+project "Sandbox"
+	location "Sandbox"
+	kind "ConsoleApp"
+	language "C++"
+
+	targetdir ("bin/".. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/".. outputdir .. "/%{prj.name}")
 	
+	files
+	{
+		"%{prj.name}/src/**.h",
+		"%{prj.name}/src/**.cpp"
+	}
+
+	includedirs
+	{
+		"%{prj.name}/src/vendor/spdlog/include;",
+		"Philomath/src"
+	}
+
+	links
+	{
+		"Philomath"
+	}
+
+	filter "system:windows"
+		cppdialect "C++17"
+		staticruntime "On"
+		systemversion "latest"
+
+		defines
+		{
+			"PM_PLATFORM_WINDOWS"
+		}
+
+	filter "configurations:Debug"
+		defines "PM_DEBUG"
+		symbols "On"
+
+	filter "configurations:Release"
+		defines "PM_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "PM_DIST"
+		optimize "On"
