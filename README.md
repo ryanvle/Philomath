@@ -1,2 +1,1 @@
-noun
-a person who loves learning and studying
+developing a box to play in
