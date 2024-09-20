@@ -1,2 +1,2 @@
-# Philomath
-Learning how to make a game engine
+noun
+a person who loves learning and studying
