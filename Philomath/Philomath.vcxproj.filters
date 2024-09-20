@@ -19,6 +19,10 @@
     <ClInclude Include="src\Philomath\Log.h">
       <Filter>Philomath</Filter>
     </ClInclude>
+    <ClInclude Include="src\Philomath\Events\Event.h" />
+    <ClInclude Include="src\Philomath\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Philomath\Events\KeyEvent.h" />
+    <ClInclude Include="src\Philomath\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Philomath\Application.cpp">
