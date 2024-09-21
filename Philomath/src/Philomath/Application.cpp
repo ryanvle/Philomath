@@ -1,5 +1,8 @@
 #include "Application.h"
 
+#include "Philomath/Events/ApplicationEvent.h"
+#include "Philomath/Log.h"
+
 namespace Philomath {
 
 	Application::Application() {
@@ -11,6 +14,9 @@ namespace Philomath {
 	}
 
 	void Application::Run() {
+		WindowResizeEvent e(1280, 720);
+		HZ_TRACE(e);
+
 		while (true);
 	}
 
