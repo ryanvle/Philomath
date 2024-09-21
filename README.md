@@ -1,2 +1,1 @@
-# Philomath
-Learning how to make a game engine
+developing a box to play in
