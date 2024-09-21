@@ -15,7 +15,7 @@ namespace Philomath {
 
 	void Application::Run() {
 		WindowResizeEvent e(1280, 720);
-		HZ_TRACE(e);
+		PM_TRACE(e.ToString());
 
 		while (true);
 	}

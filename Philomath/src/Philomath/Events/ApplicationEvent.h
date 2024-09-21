@@ -6,7 +6,7 @@
 
 namespace Philomath {
 
-	class PHILOMOATH_API WindowResizeEvent : public Event
+	class PM_API WindowResizeEvent : public Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)
@@ -25,10 +25,10 @@ namespace Philomath {
 		EVENT_CLASS_TYPE(WindowResize)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	private:
-		unsigned int m_Width; m_Height;
+		unsigned int m_Width, m_Height;
 	};
 
-	class PHILOMATH_API WindowCloseEvent : public Event
+	class PM_API WindowCloseEvent : public Event
 	{
 	public:
 		WindowCloseEvent() {}
@@ -37,7 +37,7 @@ namespace Philomath {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class PHILOMATH_API AppTickEvent : public Event
+	class PM_API AppTickEvent : public Event
 	{
 	public:
 		AppTickEvent() {}
@@ -46,7 +46,7 @@ namespace Philomath {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class PHILOMATH_API AppUpdateEvent : public Event
+	class PM_API AppUpdateEvent : public Event
 	{
 	public:
 		AppUpdateEvent() {}
@@ -55,7 +55,7 @@ namespace Philomath {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class PHILOMATH_API AppRenderEvent : public Event
+	class PM_API AppRenderEvent : public Event
 	{
 	public:
 		AppRenderEvent() {}

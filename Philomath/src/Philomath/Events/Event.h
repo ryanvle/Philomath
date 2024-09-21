@@ -38,7 +38,7 @@ namespace Philomath {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class PHILOMATH_API Event
+	class PM_API Event
 	{
 		friend class EventDispatcher;
 	public:
@@ -85,4 +85,6 @@ namespace Philomath {
 		return os << e.ToString();
 	}
 
+
 }
+

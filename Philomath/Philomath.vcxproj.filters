@@ -4,6 +4,9 @@
     <Filter Include="Philomath">
       <UniqueIdentifier>{AB7664EA-17E1-1861-601F-CA06CCC8F6B5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Philomath\Events">
+      <UniqueIdentifier>{2F9472C5-1B8D-9117-44BF-769C30177123}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Philomath.h" />
@@ -16,13 +19,21 @@
     <ClInclude Include="src\Philomath\EntryPoint.h">
       <Filter>Philomath</Filter>
     </ClInclude>
+    <ClInclude Include="src\Philomath\Events\ApplicationEvent.h">
+      <Filter>Philomath\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Philomath\Events\Event.h">
+      <Filter>Philomath\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Philomath\Events\KeyEvent.h">
+      <Filter>Philomath\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Philomath\Events\MouseEvent.h">
+      <Filter>Philomath\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Philomath\Log.h">
       <Filter>Philomath</Filter>
     </ClInclude>
-    <ClInclude Include="src\Philomath\Events\Event.h" />
-    <ClInclude Include="src\Philomath\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Philomath\Events\KeyEvent.h" />
-    <ClInclude Include="src\Philomath\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Philomath\Application.cpp">

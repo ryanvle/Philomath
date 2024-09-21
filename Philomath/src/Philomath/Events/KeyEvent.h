@@ -6,7 +6,7 @@
 
 namespace Philomath {
 
-	class PHILOMATH_API KeyEvent : public Event
+	class PM_API KeyEvent : public Event
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
@@ -19,11 +19,11 @@ namespace Philomath {
 		int m_KeyCode;
 	};
 
-	class PHILOMATH_API KeyPressedEvent : public KeyEvent
+	class PM_API KeyPressedEvent : public KeyEvent
 	{
 	public:
 		KeyPressedEvent(int keycode, int repeatCount)
-			: KeyEvent(keycode).m_RepeatCount(repeatCount) {}
+			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
 		inline int GetRepeatCount() const { return m_RepeatCount; }
 
@@ -39,7 +39,7 @@ namespace Philomath {
 		int m_RepeatCount;
 	};
 
-	class PHILOMATH_API KeyReleasedEvent : public KeyEvent
+	class PM_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
 		KeyReleasedEvent(int keycode)
@@ -52,6 +52,6 @@ namespace Philomath {
 			return ss.str();
 		}
 
-		EVENT_CLASS_CATEGORY(KeyReleased)
+		EVENT_CLASS_TYPE(KeyReleased)
 	};
 }

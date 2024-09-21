@@ -27,8 +27,8 @@ project "Philomath"
 
 	includedirs
 	{
-		"%{prj.name}/src"
-		"%{prj.name}/vendor/spdlog/include;",
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include;"
 	}
 
 	filter "system:windows"
@@ -75,8 +75,8 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/src"
-		"%{prj.name}/vendor/spdlog/include;",
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include;"
 	}
 
 	links
