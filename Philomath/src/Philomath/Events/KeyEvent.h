@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Philomath {
 
 	class PM_API KeyEvent : public Event

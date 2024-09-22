@@ -2,9 +2,6 @@
 
 #include "Philomath/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Philomath {
 
 	// Events in Philomath are currently blocking,

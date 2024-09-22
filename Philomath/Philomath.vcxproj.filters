@@ -34,6 +34,7 @@
     <ClInclude Include="src\Philomath\Log.h">
       <Filter>Philomath</Filter>
     </ClInclude>
+    <ClInclude Include="src\pmpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Philomath\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Philomath\Log.cpp">
       <Filter>Philomath</Filter>
     </ClCompile>
+    <ClCompile Include="src\pmpch.cpp" />
   </ItemGroup>
 </Project>
