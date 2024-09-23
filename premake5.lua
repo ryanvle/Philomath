@@ -10,6 +10,12 @@ workspace "Philomath"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Philomath/vendor/GLFW/include"
+
+include "Philomath/vendor/GLFW"
 	
 project "Philomath"
 	location "Philomath"

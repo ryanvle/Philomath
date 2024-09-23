@@ -1,3 +1,6 @@
 [submodule "Philomath/vendor/spdlog"]
 	path = Philomath/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Philomath/vendor/GLFW"]
+	path = Philomath/vendor/GLFW
+	url = https://github.com/TheCherno/glfw.git
