@@ -35,6 +35,7 @@
       <Filter>Philomath</Filter>
     </ClInclude>
     <ClInclude Include="src\pmpch.h" />
+    <ClInclude Include="src\Philomath\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Philomath\Application.cpp">

@@ -161,6 +161,7 @@
     <ClInclude Include="src\Philomath\Events\KeyEvent.h" />
     <ClInclude Include="src\Philomath\Events\MouseEvent.h" />
     <ClInclude Include="src\Philomath\Log.h" />
+    <ClInclude Include="src\Philomath\Window.h" />
     <ClInclude Include="src\pmpch.h" />
   </ItemGroup>
   <ItemGroup>
