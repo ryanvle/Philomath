@@ -34,14 +34,22 @@
     <ClInclude Include="src\Philomath\Log.h">
       <Filter>Philomath</Filter>
     </ClInclude>
+    <ClInclude Include="src\Philomath\Window.h">
+      <Filter>Philomath</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Philomath\WindowsWindow.h">
+      <Filter>Philomath</Filter>
+    </ClInclude>
     <ClInclude Include="src\pmpch.h" />
-    <ClInclude Include="src\Philomath\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Philomath\Application.cpp">
       <Filter>Philomath</Filter>
     </ClCompile>
     <ClCompile Include="src\Philomath\Log.cpp">
+      <Filter>Philomath</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Philomath\WindowsWindow.cpp">
       <Filter>Philomath</Filter>
     </ClCompile>
     <ClCompile Include="src\pmpch.cpp" />

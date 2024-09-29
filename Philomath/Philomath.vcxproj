@@ -162,11 +162,13 @@
     <ClInclude Include="src\Philomath\Events\MouseEvent.h" />
     <ClInclude Include="src\Philomath\Log.h" />
     <ClInclude Include="src\Philomath\Window.h" />
+    <ClInclude Include="src\Philomath\WindowsWindow.h" />
     <ClInclude Include="src\pmpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Philomath\Application.cpp" />
     <ClCompile Include="src\Philomath\Log.cpp" />
+    <ClCompile Include="src\Philomath\WindowsWindow.cpp" />
     <ClCompile Include="src\pmpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
