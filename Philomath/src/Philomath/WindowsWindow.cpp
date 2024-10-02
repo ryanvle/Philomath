@@ -17,4 +17,9 @@ namespace Philomath {
 	WindowsWindow::~WindowsWindow()
 	{
 	}
+
+	void WindowsWindow::Init(const WindowProps& props) 
+	{
+
+	}
 }
