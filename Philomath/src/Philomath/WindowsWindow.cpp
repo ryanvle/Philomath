@@ -2,6 +2,7 @@
 #include "WindowsWindow.h"
 
 namespace Philomath {
+
 	static bool s_GLFWInitialized = false;
 
 	Window* Window::Create(const WindowProps* props)
